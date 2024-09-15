@@ -6,12 +6,14 @@ COPY requirements.txt .
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install jupyter
+# RUN pip install jupyter
 
 COPY . .
 
-EXPOSE 5050
+EXPOSE 5000
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+CMD ["tail", "-f", "/dev/null"]
+#CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+#CMD ["python", "webservice.py"]
 
 
