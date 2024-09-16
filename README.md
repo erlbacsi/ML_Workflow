@@ -35,7 +35,7 @@ This is how the web service can be used:
     In addition, the model requires input for the key __‘sentiment’__. A distinction is made between three types of text.
     The key terms for this are __‘positive’__, __‘neutral’__ and __‘negative’__.
 
-2. **Sende den Request**
+2. **Send a request**
 
     The script can then simply be started in a PowerShell.
     ```bash
