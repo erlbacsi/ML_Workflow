@@ -18,9 +18,9 @@ def predict():
     
     data = request.get_json()
     if "text" not in data:
-        return jsonify({"error": "Input key Text format failure"})
+        return jsonify({"error": "check text specifier format"})
     if "sentiment" not in data:
-        return jsonify({"error": "Input key Sentiment format failure"})
+        return jsonify({"error": "check sentiment specifier format"})
     
     text = data["text"]
     sentiment = data["sentiment"]

@@ -12,8 +12,8 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["tail", "-f", "/dev/null"]
+#CMD ["tail", "-f", "/dev/null"]
 #CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
-#CMD ["python", "webservice.py"]
+CMD ["python", "webservice.py"]
 
 
